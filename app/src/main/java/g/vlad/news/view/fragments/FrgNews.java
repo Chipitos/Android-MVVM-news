@@ -95,7 +95,7 @@ public class FrgNews extends BaseBindingFragment<FrgNewsBinding, DummyModel> imp
 
     private void initRecyclerView() {
         List<Article> articles = RealmUtils.getRealmInstance().copyFromRealm(repository.getBySources(getArguments().getString(SOURCE_KEY)));
-        adapter = new NewsAdapter(articles, false, this, getBaseActivity());
+        adapter = new NewsAdapter(articles, false, this);
         binding.newsRv.setLayoutManager(getLayoutManager());
         binding.newsRv.setAdapter(adapter);
     }

@@ -15,7 +15,6 @@ import g.vlad.news.events.DeleteFavoriteEvent;
 import g.vlad.news.model.Article;
 import g.vlad.news.model.repository.ArticlesRepository;
 import g.vlad.news.model.repository.Repository;
-import g.vlad.news.view.activities.BaseInjectActivity;
 import g.vlad.news.view.handlers.Handlers;
 import g.vlad.news.viewmodel.ListNewsViewModel;
 
@@ -23,14 +22,12 @@ import g.vlad.news.viewmodel.ListNewsViewModel;
 public class NewsAdapter extends BaseRecyclerAdapter<ListNewsBinding, ListNewsViewModel, NewsAdapter.NewsViewHolder, Article> implements Handlers.ListNewsHandlers {
     private boolean isFromFavorites;
     private ItemClickListener listener;
-    private BaseInjectActivity activity;
     private Repository<Article> repository = new ArticlesRepository();
 
-    public NewsAdapter(List<Article> item, boolean isFromFavorites, ItemClickListener listener, BaseInjectActivity activity) {
+    public NewsAdapter(List<Article> item, boolean isFromFavorites, ItemClickListener listener) {
         super(item);
         this.isFromFavorites = isFromFavorites;
         this.listener = listener;
-        this.activity = activity;
     }
 
 
@@ -41,7 +38,7 @@ public class NewsAdapter extends BaseRecyclerAdapter<ListNewsBinding, ListNewsVi
 
     @Override
     public ListNewsViewModel initViewModel() {
-        return new ListNewsViewModel(activity);
+        return new ListNewsViewModel();
     }
 
     @Override

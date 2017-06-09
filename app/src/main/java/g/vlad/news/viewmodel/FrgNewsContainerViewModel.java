@@ -4,16 +4,11 @@ import android.databinding.Bindable;
 import android.graphics.drawable.Drawable;
 
 import g.vlad.news.R;
-import g.vlad.news.view.activities.BaseInjectActivity;
 
 
 public class FrgNewsContainerViewModel extends BaseViewModel {
 
     private int position;
-
-    public FrgNewsContainerViewModel(BaseInjectActivity activity) {
-        super(activity);
-    }
 
     public void setPosition(int position) {
         this.position = position;

@@ -27,7 +27,7 @@ public class FrgNewsContainer extends BaseBindingFragment<FrgNewsContainerBindin
 
     @Override
     public FrgNewsContainerViewModel initViewModel() {
-        return new FrgNewsContainerViewModel(getBaseActivity());
+        return new FrgNewsContainerViewModel();
     }
 
     @Override

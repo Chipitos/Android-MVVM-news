@@ -47,7 +47,7 @@ public class FrgFavorites extends BaseBindingFragment<FrgFavoritesBinding, Dummy
     private void initRecyclerView() {
         List<Article> articles = RealmUtils.getRealmInstance().copyFromRealm(repository.getAllFavorites());
         binding.favoritesRv.setLayoutManager(getLayoutManager());
-        binding.favoritesRv.setAdapter(new NewsAdapter(articles, true, this, getBaseActivity()));
+        binding.favoritesRv.setAdapter(new NewsAdapter(articles, true, this));
         binding.setSize(articles.size());
     }
 

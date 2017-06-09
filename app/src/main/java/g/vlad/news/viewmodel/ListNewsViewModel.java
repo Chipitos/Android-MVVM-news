@@ -9,13 +9,8 @@ import com.squareup.picasso.Picasso;
 import g.vlad.news.App;
 import g.vlad.news.model.Article;
 import g.vlad.news.utils.Utils;
-import g.vlad.news.view.activities.BaseInjectActivity;
 
 public class ListNewsViewModel extends BaseViewModel<Article> {
-
-    public ListNewsViewModel(BaseInjectActivity activity) {
-        super(activity);
-    }
 
     @Override
     public void init(Article item) {
