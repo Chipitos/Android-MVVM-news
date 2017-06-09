@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="bbc_news">BBC News</string>
+    <string name="bloomberg_news">Bloomberg News</string>
+    <string name="cnn_news">CNN News</string>
+    <string name="favorites">Favorites</string>
+    <string name="there_are_no_favorites_new">There are no favorites news.</string>
+    <string name="read_more">Read More</string>
+</resources>
