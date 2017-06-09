@@ -5,6 +5,7 @@ import android.view.View;
 public interface Handlers {
     interface ListNewsHandlers {
         void onFavoriteClick(View v);
+
         void onItemClick(View v);
     }
 
@@ -12,7 +13,7 @@ public interface Handlers {
         void onBackPressed(View v);
     }
 
-    interface FrgNewsContainerHandlers{
+    interface FrgNewsContainerHandlers {
         void onFavoritesClick(View v);
     }
 }

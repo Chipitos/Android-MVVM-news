@@ -30,7 +30,7 @@ abstract class BaseRecyclerAdapter<B extends ViewDataBinding, V extends BaseView
         return item;
     }
 
-    public T getItem(int position){
+    public T getItem(int position) {
         return item.get(position);
     }
 

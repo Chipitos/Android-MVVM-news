@@ -5,7 +5,6 @@ import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 
-
 import dagger.Module;
 import dagger.Provides;
 import g.vlad.news.BuildConfig;
@@ -22,7 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitModule {
 
     @Provides
-    Retrofit provideRetrofit(){
+    Retrofit provideRetrofit() {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         if (BuildConfig.IS_DEBUG)
             interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);

@@ -2,7 +2,6 @@ package g.vlad.news.di.module;
 
 
 import android.app.Activity;
-import android.content.Context;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
@@ -30,7 +29,7 @@ public class ActivityModule {
     }
 
     @Provides
-    FragmentManager provideFragmentManager(){
+    FragmentManager provideFragmentManager() {
         return activity.getSupportFragmentManager();
     }
 }

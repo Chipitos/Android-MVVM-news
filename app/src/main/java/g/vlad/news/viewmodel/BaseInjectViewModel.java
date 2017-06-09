@@ -14,9 +14,12 @@ public abstract class BaseInjectViewModel extends BaseObservable {
 
     Context context;
 
-    BaseInjectViewModel(){};
+    BaseInjectViewModel() {
+    }
 
-    BaseInjectViewModel(BaseInjectActivity activity){
+    ;
+
+    BaseInjectViewModel(BaseInjectActivity activity) {
         activity.buildComponent().inject(this);
     }
 }

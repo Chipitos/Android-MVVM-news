@@ -1,4 +1,5 @@
 package g.vlad.news.server;
+
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -30,7 +31,7 @@ public class RetrofitClient {
         private Retrofit retrofit;
 
         @Inject
-        public RetrofitBuilder(Retrofit retrofit){
+        public RetrofitBuilder(Retrofit retrofit) {
             this.retrofit = retrofit;
         }
 

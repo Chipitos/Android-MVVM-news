@@ -11,7 +11,7 @@ import g.vlad.news.server.response.BaseResponse;
 import okhttp3.ResponseBody;
 
 
-public abstract class BaseBindingActivity<B extends ViewDataBinding> extends BaseInjectActivity implements IRequestCallback{
+public abstract class BaseBindingActivity<B extends ViewDataBinding> extends BaseInjectActivity implements IRequestCallback {
     B binding;
 
     protected abstract

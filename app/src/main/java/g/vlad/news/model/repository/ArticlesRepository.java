@@ -58,7 +58,7 @@ public class ArticlesRepository implements RealmUtils.DBSuccessCallback, Reposit
         return getRealmInstance().where(Article.class).equalTo("source", source).findAll();
     }
 
-    public List<Article> getAllFavorites(){
+    public List<Article> getAllFavorites() {
         return getRealmInstance().where(Article.class).equalTo("isFavorite", true).findAll();
     }
 

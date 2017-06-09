@@ -10,6 +10,7 @@ import io.realm.RealmConfiguration;
 
 public class App extends Application {
     private static AppComponent component;
+
     public static AppComponent getComponent() {
         return component;
     }

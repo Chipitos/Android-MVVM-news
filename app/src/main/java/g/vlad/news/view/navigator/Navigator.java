@@ -43,7 +43,7 @@ public class Navigator {
         ft.commitAllowingStateLoss();
     }
 
-    public void finish(){
+    public void finish() {
         fragmentManager.popBackStack();
     }
 

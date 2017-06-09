@@ -34,7 +34,6 @@ public class NewsAdapter extends BaseRecyclerAdapter<ListNewsBinding, ListNewsVi
     }
 
 
-
     @Override
     public int initLayout() {
         return R.layout.list_news;
